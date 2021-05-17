@@ -27,7 +27,7 @@ function generatePassword() {
 
     if (valid) {
         var q2 = confirm("Use lowercase?");
-        if (q2) { charset = "abcdefghijklmnopqrstuvwxyz"; }
+        if (q2) { charset += "abcdefghijklmnopqrstuvwxyz"; }
         console.log('lowercase: ' + q2);
 
         var q3 = confirm("Use uppercase?");
@@ -38,7 +38,7 @@ function generatePassword() {
         if (q4) { charset += "0123456789";}
         console.log('numeric: ' + q4);
 
-        var q5 = confirm("Use special characters? e.g. ");
+        var q5 = confirm("Use special characters? e.g. !@#?");
         if (q5) { charset += "!@#?"; }
         console.log('special: ' + q5);
     }
